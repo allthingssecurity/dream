@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y git wget libgl1-mesa-glx libglib2.0-0 f
 
 RUN useradd -m -u 1000 user
 
+RUN mkdir -p /home/user/app/checkpoints && chown -R user:user /home/user/app
+
+
 USER user
 
 ENV HOME=/home/user \
