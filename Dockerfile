@@ -25,7 +25,7 @@ ENV HOME=/home/user \
 # Set the working directory to the user's home directory
 WORKDIR $HOME/app
 
-RUN git clone -b dev https://github.com/allthingssecurity/dream/ $HOME/app 
+#RUN git clone -b dev https://github.com/allthingssecurity/dream/ $HOME/app 
     
 RUN wget https://huggingface.co/camenduru/dreamtalk/resolve/main/damo/dreamtalk/checkpoints/denoising_network.pth -O $HOME/app/checkpoints/denoising_network.pth
 RUN wget https://huggingface.co/camenduru/dreamtalk/resolve/main/damo/dreamtalk/checkpoints/renderer.pt -O $HOME/app/checkpoints/renderer.pt
