@@ -178,4 +178,4 @@ with gr.Blocks(css=css) as demo:
         outputs = [output_video]
     )
 
-demo.queue(max_size=20).launch()
+demo.queue(max_size=20).launch(share=True)
